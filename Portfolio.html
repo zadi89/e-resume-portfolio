@@ -5,146 +5,178 @@
 	<meta charset="UTF-8">
 	<title>포폴 연습</title>
 	<link rel="stylesheet" href="css/Portfolio.css">
+	
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	
+
+	<link rel="stylesheet" type="text/css" href="./css/semantic.min.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js">
+	</script>
+
+	<script src="./js/semantic.min.js"></script>
+
+
+
+	
+
+	
 </head>
 
 <body>
-
 	<header id="porthead" class="site-header">
 		<div class="hello">
-		
 			<p class="Myname">Hi, I'm HeeJun</p><br>
 			<p> Jr. Front-end Web Developer</p>
 			<ul class="Myintroduce">
 				<li class="intro-title">Technical Skills</li>
 				<li class="intro-skills">Font-end: <span>npm,css,javascript,Es6(studing),HTML5</span> </li>
-				<li class="intro-skills">Back-end:  <span>Python3,Django(studing)</span> </li>
-				<li class="intro-skills">Other: 	<span>Git& Github,Aws(studing)</span></li>
+				<li class="intro-skills">Back-end: <span>Python3,Django(studing)</span> </li>
+				<li class="intro-skills">Other: <span>Git& Github,Aws(studing)</span></li>
 			</ul>
 		</div>
-
 		<nav>
 			<ul id="mininav">
-				<li><a href="#" >Portfolio</a></li>
-				<li><a href="#" >Academy</a></li>
-				<li><a href="#" >Photos</a></li>
-					<li><a href="#" >Study</a></li>
-				<li><a href="#" >Github</a></li>
-				
+				<li><a href="#" onclick="fnMove('1')">Portfolio</a></li>
+				<li><a href="#" onclick="fnMove('2')">Academy</a></li>
+				<li><a href="#">Photos</a></li>
+				<li><a href="#">Study</a></li>
+				<li><a href="#">Github</a></li>
 			</ul>
 		</nav>
 	</header>
-
-
-
-
 	<div id="content" class="site-content">
 		<div id="primary" class="content-area">
 			<main id="main" class="site-main">
-			
-			
-				<section class="homeslide" id="page-1">
-					<div class="sectioninfo">
+				<section class="homeslide" id="page-1" >
+					<div class="sectioninfo" >
 						<h4><a href="#">Portfolio</a></h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem dolores natus nobis quo quia, quaerat et iure, dignissimos aut optio. Quam mollitia, corporis cumque repellendus quibusdam ipsa dolorem commodi, pariatur!.</p>
 					</div>
 					<ul class="children">
-						<li class="card "><a href="http://zdidas.dothome.co.kr/project/index.html">
-						 <img src="images/ipswitch-whatsup-gold.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" style="width: 100%;   background: #0d96b4;">
-						 <div class="info"><h1 class="customtitle">whatsupgold</h1>
-						 <p>Roughed up a perfectly clean sans serif.</p>
-						 
-						 </div>
-						 </a>
-						</li>
-						
-						
-						
-						<li class="card "><a href="zdidas.dothome.co.kr/supreme/supremeTT.html">
-						 <img src="./images/supreme.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" style="width: 100%;">
-						 <div class="info"><h1 class="customtitle">Supreme</h1>
-						 <p>Roughed up a perfectly clean sans serif.</p>
-						 
-						 </div>
-						 </a>
-						</li>
-						
-						
-				<li class="card "><a href="#">		
-							 <img src="./images/image-4.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" style="width: 100%; height: auto;">
-						
-						
-						<div class="info"><h1 class="customtitle">name</h1><p>Saving horizontal space, one weight at a time. </p></div></a>
-						
-						</li>
-						
-						
-						<li class="card "><a href="#">		
-							 <img src="./images/image-4.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" style="width: 100%; height: auto;">
-						
-						
-						<div class="info"><h1 class="customtitle">name</h1><p>Saving horizontal space, one weight at a time. </p></div></a>
-						
-						</li>
-					
-						
+						<li class="card "   data-aos="fade-down"
+  data-aos-duration="500"><a id="button-1">
+					<img src="images/ipswitch-whatsup-gold.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" style="width: 100%;   background: #0d96b4;"><div class="info"><h1 class="customtitle">whatsupgold</h1><p>Roughed up a perfectly clean sans serif.</p></div></a></li>
+						<li class="card"  data-aos="fade-down"
+     data-aos-duration="1200"> <a id="button-2"><img src="./images/supreme.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" style="width: 100%;"><div class="info"><h1 class="customtitle">Supreme</h1><p>Roughed up a perfectly clean sans serif.</p></div></a></li>
+						<li class="card "  data-aos="fade-down"
+  data-aos-duration="2000"><a href="http://zdidas.dothome.co.kr/2018-Concert-Life-Project-master/index.php">		<img src="./images/concert2.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" style="width: 100%; height: auto;"><div class="info"><h1 class="customtitle">Concert-Life</h1><p>Saving horizontal space, one weight at a time. </p></div></a></li>
+						<li class="card"  data-aos="fade-down"
+  data-aos-duration="2500"><a href="#">		<img src="./images/image-4.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" style="width: 100%; height: auto;"><div class="info"><h1 class="customtitle">name</h1><p>Saving horizontal space, one weight at a time. </p></div></a></li>
 					</ul>
 				</section>
-				
-				
-				
-			<section class="homeslide" id="page-2">
+				<section class="homeslide" id="page-2">
 					<div class="sectioninfo">
-						<h4><a href="/fonts">Portfolio</a></h4>
+						<h4><a href="/fonts">Academy</a></h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem dolores natus nobis quo quia, quaerat et iure, dignissimos aut optio. Quam mollitia, corporis cumque repellendus quibusdam ipsa dolorem commodi, pariatur!.</p>
 					</div>
 					<ul class="children">
-						<li class="card "><a href="#">
-						 <img src="./images/supreme.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" style="width: 100%;">
-						 <div class="info"><h1 class="customtitle">Supreme</h1>
-						 <p>Roughed up a perfectly clean sans serif.</p>
-						 
-						 </div>
-						 </a>
-						</li>
-						
-						
-						
-						<li class="card "><a href="#">
-						 <img src="./images/supreme.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" style="width: 100%;">
-						 <div class="info"><h1 class="customtitle">Supreme</h1>
-						 <p>Roughed up a perfectly clean sans serif.</p>
-						 
-						 </div>
-						 </a>
-						</li>
-						
-						
-				<li class="card "><a href="#">		
-							 <img src="./images/image-4.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" style="width: 100%; height: auto;">
-						
-						
-						<div class="info"><h1 class="customtitle">name</h1><p>Saving horizontal space, one weight at a time. </p></div></a>
-						
-						</li>
-						
-						
-						<li class="card "><a href="#">		
-							 <img src="./images/image-4.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" style="width: 100%; height: auto;">
-						
-						
-						<div class="info"><h1 class="customtitle">name</h1><p>Saving horizontal space, one weight at a time. </p></div></a>
-						
-						</li>
+						<li class="card "><a href="#"><img src="./images/supreme.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" style="width: 100%;"><div class="info"><h1 class="customtitle">Supreme</h1><p>Roughed up a perfectly clean sans serif.</p></div></a></li>
+						<li class="card "><a href="#"><img src="./images/supreme.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" style="width: 100%;"><div class="info"><h1 class="customtitle">Supreme</h1><p>Roughed up a perfectly clean sans serif.</p></div></a></li>
+						<li class="card "><a href="#">		<img src="./images/image-4.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" style="width: 100%; height: auto;"><div class="info"><h1 class="customtitle">name</h1><p>Saving horizontal space, one weight at a time. </p></div></a></li>
+						<li class="card "><a href="#">		<img src="./images/image-4.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" style="width: 100%; height: auto;"><div class="info"><h1 class="customtitle">name</h1><p>Saving horizontal space, one weight at a time. </p></div></a></li>
 						<li class="card "><a href="https://www.tylerfinck.com/shop/grandstander/">		<img src="https://www.tylerfinck.com/wp-content/uploads/2018/01/grandstander-classic.svg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" /><div class="info"><h1 class="customtitle">Grandstander Classic</h1><p>Kid tested, dad approved!</p></div></a></li>
-						
 					</ul>
 				</section>
-				
-				
-				
 			</main>
 		</div>
 	</div>
+	
+	<footer>
+		
+	 희준 
+		
+	</footer>
+	
+	
+	
+	
+	
+	
+<!--	모달-->
+
+<div class="ui modal one">
+  <i class="close icon">X</i>
+  <div class="header">
+   ipswitch
+  </div>
+  <div class="image content">
+    <div class="ui medium image">
+     <a href="http://zdidas.dothome.co.kr/project/index.html">
+      <img src="./images/ipswitch-whatsup-gold.jpg">
+      </a>
+    </div>
+    <div class="description">
+      <div class="ui header">포폴 설명 제목.</div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat rerum delectus nesciunt a, quod minus alias assumenda architecto totam, nulla ex quae voluptatum provident veniam nam, tempore, atque adipisci aliquid.</p>
+    </div>
+  </div>
+  <div class="actions">
+
+    <div class="ui positive right labeled icon button">
+   			 <a href="http://zdidas.dothome.co.kr/project/index.html">홈페이지 방문하기</a>
+      <i class="checkmark icon"></i>
+    </div>
+  </div>
+</div>
+	
+	
+<div class="ui modal two">
+  <i class="close icon">X</i>
+  <div class="header">
+   supreme
+  </div>
+  <div class="image content">
+    <div class="ui medium image">
+     <a href="http://zdidas.dothome.co.kr/supreme/SupremeTT.html">
+      <img src="./images/supreme.jpg">
+      </a>
+    </div>
+    <div class="description">
+      <div class="ui header">포폴 설명 제목.</div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat rerum delectus nesciunt a, quod minus alias assumenda architecto totam, nulla ex quae voluptatum provident veniam nam, tempore, atque adipisci aliquid.</p>
+    </div>
+  </div>
+  <div class="actions">
+
+    <div class="ui positive right labeled icon button">
+   			 <a href="http://zdidas.dothome.co.kr/supreme/SupremeTT.html">홈페이지 방문하기</a>
+      <i class="checkmark icon"></i>
+    </div>
+  </div>
+</div>	
+
+	
+	
+	
+	
+	
+	<script>
+		
+	/* fadein */	
+  AOS.init();
+		
+		
+		/*클릭시 이동*/
+		
+		    function fnMove(seq){
+        let offset = $("#page-" + seq).offset();
+        $('html, body').animate({scrollTop : offset.top}, 400);
+    }
+		
+		/*모달*/
+		$('#button-1 ').click(function(){
+	$('.ui.modal.one ')
+  .modal('show');	
+		});	
+		
+		$(' #button-2').click(function(){
+	$(' .ui.modal.two ')
+  .modal('show');	
+		});		
+		
+		
+</script>
 </body>
 
 </html>

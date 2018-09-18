@@ -248,3 +248,33 @@ ul.children li a:hover div.info {
 	color: #fff;
 	box-shadow: 0 -1px 0 rgba(0, 0, 0, 1);
 }
+
+
+
+
+
+
+footer{
+	height: 100px;
+}	
+
+
+
+
+
+
+
+/*모달 MODAL*/
+	
+	.ui.modal{display: none;}
+	
+	
+	.ui.positive.right.labeled.icon.button{
+		background-color: #fff;
+	}
+	.ui.positive.right.labeled.icon.button > a{
+		color: #4183c4;
+		font-weight: 700px;
+		font-size: 16px;
+	}
+	
