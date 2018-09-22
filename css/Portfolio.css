@@ -226,6 +226,7 @@ ul.children li a:hover div.info {
 	background: #111;
 	color: #fff;
 	box-shadow: 0 -1px 0 rgba(0, 0, 0, 1);
+	height:auto;
 }
 
 ul.children li {
@@ -248,6 +249,7 @@ ul.children li {
 	line-height: 35px;
 	font-size: 14px;
 	text-align: left;
+	overflow: hidden;
 }
 
 .info .page2-content{
@@ -257,6 +259,8 @@ ul.children li {
 
 .info h1.customtitle {
 	line-height: 20px;
+	overflow: hidden;
+	height: 20px;
 }
 .info p span{
 	line-height: 50px;
@@ -303,4 +307,54 @@ footer{
 	}
 
 .image.content .description span{color:#2185d0;}
+
+
+
+
+
+
+/*반응형 모바일*/
+
+@media all and (max-width:1220px) { 
+	ul.children{height: 600px;}
+
+}
+
+@media all and (max-width:848px){
+ #mininav {position: absolute;top:2%; }
+	ul.children{height: 500px;}
+	.info p{font-size: 12px; width: 100%;     line-height: 25px;}
+	.info h1.customtitle{font-size: 18px; }
+	
+	
+			/*footer*/
+	
+	.last-ment-title{font-size: 19px;}
+	.last-ment p{ font-size: 12px;}
+}
+
+	
+	
+
+
+
+
+@media all and (max-width:480px) {
+	ul.children{height: 400px;}
+	.info p{font-size: 10px;}
+
+		
+	#mininav a{font-size:12px; font-weight: 600;}
+
+	
+	.info h1.customtitle{font-size: 12px; }
+	
+	
+}
+
+@media all and (max-width:400px) {
+		header#porthead{width: 70%; }
+
+	
+}
 	
