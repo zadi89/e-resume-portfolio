@@ -123,6 +123,31 @@ border-color: #f1f1f1;
 
 
 
+.resume-myIntroduce {
+
+	background: url(../images/a4-paper.jpg) no-repeat fixed center center ;
+	
+	    width: 100%;
+	height: 500px;
+	
+		position:relative;
+	overflow: hidden;
+
+   
+}
+.resume-myIntroduce .sectioninfo{
+	position:relative; height:100%;
+}
+
+
+.resume-myIntroduce .sectioninfo p{ 
+width: 50%;
+	height: 90%;
+margin:  0 auto; 
+	overflow: hidden;
+	box-sizing: border-box;
+line-height: 20px;
+}
 
 
 
@@ -192,22 +217,26 @@ ul.children {
 	margin: 0 0;
 	padding: 45px 35px 55px;
 	position: relative;
-	/*	left: 30%;*/
+
 	overflow: hidden;
 	white-space: nowrap;
 	cursor: pointer;
 	
-	height: 700px;
-/*
-	height: 700px;
-	min-height: 300px;
-*/
+	min-height: 700px;
+
 }
 
 ul.children:hover {
-	overflow-x: scroll;
+
 	padding-right: 36px;
 }
+
+
+ #page-2 ul.children:hover {
+	overflow-x: scroll;
+	padding-right: 16px;
+}
+
 
 ul.children li a {
 	display: block;
@@ -229,17 +258,23 @@ ul.children li a:hover div.info {
 	height:auto;
 }
 
-ul.children li {
+ ul.children li.card {
 	list-style-type: none;
-	width: 30%;
+	width: 26%;
 	margin: 0 auto;
 	position: relative;
-	margin-left: 2%;
+	margin-left: 5%;
 	display: inline-block;
 	line-height: 0;
-	position: relative;
+
 
 }
+
+
+
+
+
+
 
 .info{position: absolute; width: 100%;height: 40%;} 
 
@@ -316,14 +351,14 @@ footer{
 /*반응형 모바일*/
 
 @media all and (max-width:1220px) { 
-	ul.children{height: 600px;}
+/*	ul.children{height: 600px;}*/
 
 }
 
 @media all and (max-width:848px){
  #mininav {position: absolute;top:2%; }
-	ul.children{height: 500px;}
-	.info p{font-size: 12px; width: 100%;     line-height: 25px;}
+/*	ul.children{height: 500px;}*/
+	.info p{font-size: 12px; width: 100%;     line-height: 25px; }
 	.info h1.customtitle{font-size: 18px; }
 	
 	
@@ -336,12 +371,43 @@ footer{
 	
 	
 
+@media all and (max-width:600px) {
+	ul.children li.card {width: 100%;height: 800px;display: block;}
+	
+	ul.children li a:hover div.info{height:40%;}
+	
+	.resume-myIntroduce .sectioninfo p{width: 80%; font-size: 11px;}
+	
+		.homeslide .sectioninfo p {
+    font-size: 13px;
+    line-height: 20px;
+}
+	
+	
+	
+	 #page-2 ul.children:hover {
+	overflow-x: hidden;
+	
+}
 
+}
 
 
 @media all and (max-width:480px) {
-	ul.children{height: 400px;}
+	.resume-myIntroduce h4{ font-size: 23px; font-weight: 900; line-height: 50px;}
+	
+	.resume-myIntroduce .sectioninfo p{width: 100%; font-size: 11px; font-weight: 600; line-height: 25px;}
+	.resume-myIntroduce .sectioninfo p.intro-resume span{ display: none;}
+	
+	
+
+	
+/*	ul.children{height: 400px;}*/
 	.info p{font-size: 10px;}
+	
+	ul.children li.card {height: 500px;}
+	
+
 
 		
 	#mininav a{font-size:12px; font-weight: 600;}
@@ -353,6 +419,15 @@ footer{
 }
 
 @media all and (max-width:400px) {
+	#mininav a {
+    font-size: 10px;
+
+	}
+	
+		.resume-myIntroduce h4{ font-size: 19px; font-weight: 900; line-height: 50px;}
+	
+	
+	
 		header#porthead{width: 70%; }
 
 	
